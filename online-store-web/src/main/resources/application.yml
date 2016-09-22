@@ -10,7 +10,7 @@ zuul:
   ignored-services: '*'
   routes:
     app-api-service:
-      path: /appapi/**
+      path: /api/**
       url: http://192.168.1.128:9990
       
     auth-service:
@@ -26,7 +26,7 @@ security:
       userAuthorizationUri: http://192.168.1.128:8181/uaa/oauth/authorize
       clientId: acme
       clientSecret: acmesecret
-  ignored: /assets/**,/appapi/**
+  ignored: /assets/**
 eureka:
   instance:
     non-secure-port: 8787
@@ -48,7 +48,7 @@ zuul:
   routes:
     edge-service:
       path: /api/**
-      url: http://${DOCKER_IP:192.168.99.100}:9999
+      url: http://${DOCKER_IP:192.168.99.100}:9990
     auth-service:
       path: /user/**
       url: http://${DOCKER_IP:192.168.99.100}:8181/uaa/user

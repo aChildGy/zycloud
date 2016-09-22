@@ -8,7 +8,7 @@ spring:
     name: app-api-service
 zuul:
   ignored-services: '*'
-  ignoredPatterns: /**/appapi/**
+  ignoredPatterns: /**/api/**
   routes:
     account-service: /account/**
     payment-service: /payment/**
@@ -55,7 +55,7 @@ spring:
       base-url: http://zipkin:9411/
 zuul:
   ignored-services: '*'
-  ignoredPatterns: /**/appapi/**
+  ignoredPatterns: /**/api/**
   routes:
     account-service: /account/**
     payment-service: /payment/**
