@@ -14,10 +14,12 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @EnableZuulProxy
 @EnableOAuth2Sso
 @EnableHystrix
+
 public class OnlineStoreApplication extends WebSecurityConfigurerAdapter {
 
     public static void main(String[] args) {
         SpringApplication.run(OnlineStoreApplication.class, args);
+        
     }
 
     @Override

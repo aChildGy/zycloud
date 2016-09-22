@@ -9,9 +9,10 @@ spring:
 zuul:
   ignored-services: '*'
   routes:
-    edge-service:
-      path: /api/**
-      url: http://192.168.1.128:9999
+    app-api-service:
+      path: /appapi/**
+      url: http://192.168.1.128:9990
+      
     auth-service:
       path: /user/**
       url: http://192.168.1.128:8181/uaa/user
@@ -25,7 +26,7 @@ security:
       userAuthorizationUri: http://192.168.1.128:8181/uaa/oauth/authorize
       clientId: acme
       clientSecret: acmesecret
-  ignored: /assets/**
+  ignored: /assets/**,/appapi/**
 eureka:
   instance:
     non-secure-port: 8787
@@ -34,7 +35,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://192.168.1.128:8761/eureka/
 ---
 spring:
   profiles: docker
