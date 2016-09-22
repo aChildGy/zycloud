@@ -5,13 +5,20 @@ spring:
 spring:
   profiles: development
   application:
-    name: edge-service
+    name: app-api-service
 zuul:
   ignored-services: '*'
-  ignoredPatterns: /**/api/**
+  ignoredPatterns: /**/appapi/**
   routes:
-    user-admin-service: /userAdmin/**
-    address-service: /address/** 
+    account-service: /account/**
+    payment-service: /payment/**
+    inventory-service: /inventory/**
+    order-service: /order/**
+    user-service: /user/**
+    catalog-service: /catalog/**
+    shopping-cart-service: /shoppingcart/**
+    address-service: /address/**
+    user-admin-service: /useradmin/**  
   host:
     socket-timeout-millis: 60000
     connect-timeout-millis: 60000
@@ -43,12 +50,12 @@ eureka:
 spring:
   profiles: docker
   application:
-    name: edge-service
+    name: app-api-service
   zipkin:
       base-url: http://zipkin:9411/
 zuul:
   ignored-services: '*'
-  ignoredPatterns: /**/api/**
+  ignoredPatterns: /**/appapi/**
   routes:
     account-service: /account/**
     payment-service: /payment/**
@@ -57,6 +64,8 @@ zuul:
     user-service: /user/**
     catalog-service: /catalog/**
     shopping-cart-service: /shoppingcart/**
+    address-service: /address/**
+    user-admin-service: /useradmin/**  
 security:
   oauth2:
     resource:
