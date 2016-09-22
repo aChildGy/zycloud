@@ -17,7 +17,8 @@ zuul:
     user-service: /user/**
     catalog-service: /catalog/**
     shopping-cart-service: /shoppingcart/**
-    address-service: /address/** 
+    address-service: /address/**
+    user-admin-service: /useradmin/**  
   host:
     socket-timeout-millis: 60000
     connect-timeout-millis: 60000
