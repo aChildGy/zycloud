@@ -11,8 +11,8 @@
 	</page_setting>
 	<category_index>0</category_index>
 	<zoom>1.0</zoom>
-	<x>81</x>
-	<y>17</y>
+	<x>-74</x>
+	<y>0</y>
 	<default_color>
 		<r>128</r>
 		<g>128</g>
@@ -135,7 +135,7 @@
 			</connections>
 			<display>false</display>
 			<creation_date>2016-09-13 16:00:58</creation_date>
-			<updated_date>2016-10-10 17:21:56</updated_date>
+			<updated_date>2016-10-11 17:49:31</updated_date>
 			<model_property>
 				<name>Project Name</name>
 				<value></value>
@@ -1095,7 +1095,7 @@
 			<connections>
 			</connections>
 			<physical_name>product</physical_name>
-			<logical_name>商品SPU库</logical_name>
+			<logical_name>商品库</logical_name>
 			<description>商品</description>
 			<constraint></constraint>
 			<primary_key_name></primary_key_name>

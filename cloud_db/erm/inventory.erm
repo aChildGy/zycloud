@@ -73,12 +73,12 @@
 			</export_ddl_setting>
 			<export_excel_setting>
 				<category_id>null</category_id>
-				<output_path></output_path>
+				<output_path>cloud_db\erm\inventory.xls</output_path>
 				<template></template>
 				<template_path></template_path>
-				<used_default_template_lang></used_default_template_lang>
+				<used_default_template_lang>en</used_default_template_lang>
 				<image_output></image_output>
-				<is_open_after_saved>true</is_open_after_saved>
+				<is_open_after_saved>false</is_open_after_saved>
 				<is_put_diagram>true</is_put_diagram>
 				<is_use_logical_name>true</is_use_logical_name>
 			</export_excel_setting>
@@ -135,7 +135,7 @@
 			</connections>
 			<display>false</display>
 			<creation_date>2016-09-30 10:36:16</creation_date>
-			<updated_date>2016-10-10 17:16:19</updated_date>
+			<updated_date>2016-10-12 14:01:01</updated_date>
 			<model_property>
 				<name>Project Name</name>
 				<value></value>
@@ -258,11 +258,11 @@
 	<contents>
 		<table>
 			<id>0</id>
-			<height>137</height>
-			<width>226</width>
+			<height>160</height>
+			<width>231</width>
 				<font_name>微软雅黑</font_name>
 				<font_size>9</font_size>
-			<x>48</x>
+			<x>72</x>
 			<y>48</y>
 			<color>
 				<r>128</r>
